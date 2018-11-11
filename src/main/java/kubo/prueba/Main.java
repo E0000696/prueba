@@ -182,6 +182,12 @@ public class Main {
 		if(similitudAnterior <=0){
 			resultado ="Sin coincidencias";
 		}
+		
+		if(!resultado.equals("Sin coincidencias")){
+			JSONObject jsonSalida = new JSONObject();
+			jsonSalida.append("name", resultado);
+			resultado= jsonSalida.toString();
+		}
 		return resultado;
 	}
 }

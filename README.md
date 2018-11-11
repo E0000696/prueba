@@ -9,7 +9,7 @@ Es decir puedo limitar la distancia a 3 operaciones para limitar los caracteres,
 Existen multiples algoritmos, dependiento de los datos que se analizan uno sera mas util que otro, para este caso en especifico de nombres, me parece mas eficiente aplicar Levenshtein.
 
 -------------
-Ejecutar el programa:
+Ejecutar el programa (consola):
 Desde linea de comandos ir a donde se encuentra el jar con las dependencias y ejecutar:
 [Agregar nombre]:
 java -jar prueba-jar-with-dependencies.jar add {"name":"Alberto Vera Padrón"}
@@ -19,3 +19,10 @@ java -jar prueba-jar-with-dependencies.jar list
 java -jar prueba-jar-with-dependencies.jar fuzzy-search {"search":"Alberto Vera Padrón"}
 [o tambien para buscar]
 java -jar prueba-jar-with-dependencies.jar search {"search":"Alberto Vera Padrón"}
+
+
+----------------
+Version WEB del programa: 
+Tambien agregue una version web del programita para que sea mas comoda la lectura de los JSON.
+La URL del servidor a donde lo subi es la siguiente:
+http://23.101.129.16/front-MEM/Views/fuzzySearch/Index.html

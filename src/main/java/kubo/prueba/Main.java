@@ -45,6 +45,8 @@ public class Main {
 		String resultado = "";
 		JSONArray obj = null;
 		JSONObject input = null;
+		FileWriter file = null;
+		try {
 		if (checkFile() <= 0) {
 			obj = new JSONArray();
 			input = new JSONObject(JSON);
@@ -54,15 +56,13 @@ public class Main {
 			input = new JSONObject(JSON);
 			obj.put(input);
 
-		}
-
-		FileWriter file = null;
-		try {
+		}		
+		
 			file = new FileWriter("fuzzy-search.txt");
 			file.write(obj.toString());
 			System.out.println("Usuario agregado");
 		} catch (Exception e) {
-			System.out.println("Ocurrio un problema con su JSON de entrada, por favor verifique.");
+			System.out.println("Ocurrio un problema con su JSON de entrada, por favor verifique el formato");
 		} finally {
 			file.close();
 		}
@@ -72,8 +72,10 @@ public class Main {
 
 	public static String list() throws Exception {
 		String resultado = "";
-		BufferedReader br = new BufferedReader(new FileReader("fuzzy-search.txt"));
+		boolean exists = true;
+		BufferedReader br =null;
 		try {
+			br = new BufferedReader(new FileReader("fuzzy-search.txt"));
 			StringBuilder sb = new StringBuilder();
 			String line = br.readLine();
 			while (line != null) {
@@ -114,7 +116,12 @@ public class Main {
 		        sortedJsonArray.put(jsonValues.get(i));
 		    }
 			resultado = sortedJsonArray.toString();
-		} finally {
+		} catch(FileNotFoundException e){
+			exists = false;
+			return "[]";
+		}
+		finally {
+			if (exists)
 			br.close();
 		}
 		return resultado;
@@ -164,6 +171,7 @@ public class Main {
 			//Ver resultados
 			//System.out.println(ld.getDistancia());
 			//System.out.println(ld.getSimilitud() * 100 + " %");
+			//aqui podria limitar por distancia o similitud
 			similitudActual = ld.getSimilitud() * 100;
 
 				resultado = similitudActual >= similitudAnterior ? objetivo : resultado;

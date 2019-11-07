@@ -1,0 +1,1683 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "TOM_GEB",
+        "version": "1.0.0",
+        "description": "performEndorsement",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "name": "Swagger API Team",
+            "url": "http://swagger.io"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "servers": [
+        {
+            "url": "http://"
+        }
+    ],
+    "paths": {
+        "/api/validate/{id_anexo}": {
+            "get": {
+                "parameters": [
+                    {
+                        "examples": {
+                            "1": {
+                                "value": "1"
+                            }
+                        },
+                        "name": "id_anexo",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "SM_TIMETOEXPIRE": "6754",
+                                            "SM_USERDN": "uid=N3424417,ou=people,o=affiliates,c=mexico,o=metlife,dc=metlife,dc=com",
+                                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.87 Safari/537.36",
+                                            "Accept-Encoding": "gzip, deflate, br",
+                                            "SM_REALM": "protect:/",
+                                            "$WSRA": "10.215.44.170",
+                                            "$WSIS": "false",
+                                            "Sec-Fetch-Mode": "cors",
+                                            "SM_AUTHDIRNAMESPACE": "LDAP:",
+                                            "SM_SDOMAIN": ".metlife.com",
+                                            "SM_AUTHTYPE": "Form",
+                                            "$WSRH": "10.215.44.170",
+                                            "SM_AUTHREASON": "0",
+                                            "$WSXCTCONTEXTID": "XcMx7wrXDMcAALqnxScAAABx",
+                                            "_WS_HAPRT_WLMVERSION": "-1",
+                                            "SM_SERVERSESSIONID": "yiRa4Xs+LKeyT5mJrSlzN6XBZtY=",
+                                            "email": "ismael.carballo-sanchez@metlife.com.mx",
+                                            "metrolename": "MX-11998-TOM_GEB_DEV_Admin",
+                                            "Content-Type": "application/json; charset=utf-8",
+                                            "Cookie": "nue=1; soli=1; document=1; duplicate=1; ser=2; list=2; SMSESSION=TtAbP2wH2E3DtY1AmZM+PBPkVB4eO8m1cCO2/8iNV6MaQJ/n00YAbLHFGK6+ahNCulyooik/Ck5fIoAslw3tIH2Ffrkxwj9TthKAzRr8Fx2tUcSwlHzwP3mDI/hSGzYnTB6LUqDJUH8JyvmhdLlJD46hdxYzvjcFoJGatji5x/mJnNWbFJIg0qt/jePOeUE9YDmZwbGVNGosuY2V/m+eDyhyi682svMhQa3sbGQM0j80FCAn8oZxL/lTWcj2xklPxZruDoN5PsPcLhiZjSMNopCgABicuzLvVHW3P65KwSgkBhkkqBQbjvum67X0N7vVq9/laa8ANne9nBPXqq49c31jfnX+ABcNX/ojBWIUFQ63CIpwj9Ir/jgkoCIbxMtdG86yqBRN5Z7LTPNhPVzA0jB6HzE+9KR1xcQckPV8nZFrbd8OXRbBvqwtThZ7umUT674PCzPGFumej0clpAcqY2Ms2bCwvEhIiF0pvinoancUjpO5PoP71WBqYNHhKXXmr7hmbgN4xpgq4bGMJ+Kad4sMdJCptXtcwl8NkvP3tsRrZA6x0giGvzMFsHTkfz7vcm+A8NUVP5RJYS6As6Q8yIIn2POFDS5bTr4rSlVbIfg5624yUUhwhbB/JYKzYokmUOJNQ54KTQyhAvWCkraGBQ9eSC5MNCXYNW1GCqdFo7lNI31pjZKVQEdvMY/3nAKsXyD4qRoUOxcOzznMExnXlsZ5AN9Re+t3pF+jXihNk4T4tpcHgaSaiVzqo5dqUHcKcsdXcK5AZNFlr+wf759YIU3hWAFDbPyD6xCVcWLKSLN2F7YlhbwWSZ+5lT+QsXOk2/4KtX4eUM0VMGK9bd6/ljJLPVTl17w2KH74w0pNrngVTGfoEYLb2dWCEQ/rJIcz03rw3aymqCIrEO7COzBjSDiRvWy9SesWb+Mn+X7A1+MHCiP9Q3l04l6q88vZxVyveqSc1m7nZfC7NvWYCd5oZ82ttoxCZ0YzydzRC3dVmESxVZYUhMCrKbVI/tjiv6eX7D5wjtFnHms6fu0XnrIw0O1qmhns9knPrKInQctdzSB8kWBaAPqipedPdp4LTwWS5Qum5aLwgqw5TbzyqhS0budck7OnfN7nKXogJbvLF2vkVOUXcSIbrsVrU+4ClMNGqPl7D41ekkK1z24VY3XbLFzokS9YkB8HxtdK1Bz930Rl2DpxCDkOltTJMS/9AnsY",
+                                            "SM_AUTHDIRSERVER": "mxsrvldape.alico.corp:389",
+                                            "SM_SERVERSESSIONSPEC": "OrAOvi+SEamH5uMsQ15t+y07Ly/QUb49ixbd741KlnEC3Q9D4rQ5NOIifWnMko1SsWvfBVVrdQXO4BE5FNPTV42B3RX6Qa9P57GFeXDaCJa9mG5k1d/iol/CC3AWWSHkaraaD7an8ZD8LWommmQ0F4e9iAobD2UxdPGpreFgay1jLVqf9Z4AReoF3YSONjN+fagxXXvyxR/r3XGM5sAMjaTTZOQtGzSlald08guJwfMBw89GLIPGWh3ISJyljBxhPq2Vvc4522d93FBwfEiNbPdgiPnlwoIJDRkvPY4ZGDXQnQ8xtEHASzxvjsY8YuZYRuskxue2kBvdhP+ongdViQZSSngh+X+4jLvednsWg3pRop5VpIPPUvSRn7r4OhEUHE04LJuwJ4yo14gkcNWi6y7RbBOtWrewfanX0uhlKJtaKCmLJKe6oIPb50oWVd30Bhe9H/wD1yvZAwciGINQIH/ul+MvZ3K8RMe9/RhLuaQ=",
+                                            "Accept": "application/json, text/plain, */*",
+                                            "$WSPR": "HTTP/1.1",
+                                            "$WSRU": "N3424417",
+                                            "Referer": "https://dev.portalgeb.ui.metlife.com/mxportalendososui/",
+                                            "X-Forwarded-Host": "dev.portalgeb.ui.metlife.com",
+                                            "Sec-Fetch-Site": "same-origin",
+                                            "Host": "dev.portalgeb.ui.metlife.com",
+                                            "Surrogate-Capability": "WS-ESI=\"ESI/1.0+\"",
+                                            "Pragma": "no-cache",
+                                            "cn": "ISMAEL CARBALLO SANCHEZ",
+                                            "SM_REALMOID": "06-00063281-d8cb-1d2d-9b13-f31dac18f071",
+                                            "metuid": "N3424417",
+                                            "singularityheader": "appId=554*btid=123110*donotresolve=true*guid=2dd761db-adb9-4868-93f4-119e55ed78298054*cidfrom=4154*unresolvedexitid=0*exitguid=3*cidto={[UNRESOLVED][20340]}*etypeorder=CUSTOM*esubtype=MODULE",
+                                            "Cache-Control": "no-cache",
+                                            "SM_AUTHDIROID": "0e-00075492-ae7c-1da8-baae-f31dac180032",
+                                            "$WSSC": "http",
+                                            "SM_AUTHDIRNAME": "Mexico Dev LDAP",
+                                            "businessCategory": "",
+                                            "X-Forwarded-For": "172.26.132.132",
+                                            "SM_TRANSACTIONID": "000000000000000000000000c70cd70a-baa7-5dc331ef-6fa74700-13b355238245",
+                                            "$WSSP": "80",
+                                            "Accept-Language": "es-US,es;q=0.9,es-419;q=0.8,en;q=0.7",
+                                            "SM_USER": "N3424417",
+                                            "SM_SERVERIDENTITYSPEC": "",
+                                            "X-Forwarded-Server": "dev.portalgeb.ui.metlife.com",
+                                            "$WSSN": "dev.portalgeb.ui.metlife.com"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "obtiene datos sesion"
+                    }
+                }
+            }
+        },
+        "/api/getMenusRolbyName": {
+            "post": {
+                "requestBody": {
+                    "description": "Obtiene menus de rol",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "username": "undefined",
+                                        "sistema": "MXENDOSOSUI"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": [
+                                            {
+                                                "menu_id": 8,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Principales",
+                                                "menu_univ_rsrc_lctr": "",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 9,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Gestion de Póliza",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 10,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Endosos",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 11,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 12,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Usuarios y Gestión de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 13,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 14,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 15,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de usuarios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 16,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 21,
+                                                "prnt_menu_id": 13,
+                                                "menu_dscr": "[ Solicitud de Endoso]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 25,
+                                                "prnt_menu_id": 15,
+                                                "menu_dscr": "[ Administración de usuarios]-Usuarios",
+                                                "menu_univ_rsrc_lctr": "#users",
+                                                "menu_ord_num": 2,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 26,
+                                                "prnt_menu_id": 16,
+                                                "menu_dscr": "[ Administración de Roles]-Roles",
+                                                "menu_univ_rsrc_lctr": "#roles",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 27,
+                                                "prnt_menu_id": 11,
+                                                "menu_dscr": "[ Seguimiento a Folios]-Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 28,
+                                                "prnt_menu_id": 27,
+                                                "menu_dscr": "[ Folios]-Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "#track",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 29,
+                                                "prnt_menu_id": 9,
+                                                "menu_dscr": "[ Gestion de Póliza]-Polizas",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 30,
+                                                "prnt_menu_id": 14,
+                                                "menu_dscr": "[ Servicios]-Listado de Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "description": "menus por rol"
+                    }
+                }
+            }
+        },
+        "/api/getMenusRol": {
+            "post": {
+                "requestBody": {
+                    "description": "{\"sistema\":\"MXENDOSOSUI\"}",
+                    "content": {
+                        "application/json": {
+
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": [
+                                            {
+                                                "menu_id": 8,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Principales",
+                                                "menu_univ_rsrc_lctr": "",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 9,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Gestion de Póliza",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 10,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Endosos",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 11,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 12,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Usuarios y Gestión de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 13,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 14,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 15,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de usuarios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 16,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 21,
+                                                "prnt_menu_id": 13,
+                                                "menu_dscr": "[ Solicitud de Endoso]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 25,
+                                                "prnt_menu_id": 15,
+                                                "menu_dscr": "[ Administración de usuarios]-Usuarios",
+                                                "menu_univ_rsrc_lctr": "#users",
+                                                "menu_ord_num": 2,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 26,
+                                                "prnt_menu_id": 16,
+                                                "menu_dscr": "[ Administración de Roles]-Roles",
+                                                "menu_univ_rsrc_lctr": "#roles",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 27,
+                                                "prnt_menu_id": 11,
+                                                "menu_dscr": "[ Seguimiento a Folios]-Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 28,
+                                                "prnt_menu_id": 27,
+                                                "menu_dscr": "[ Folios]-Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "#track",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 29,
+                                                "prnt_menu_id": 9,
+                                                "menu_dscr": "[ Gestion de Póliza]-Polizas",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 30,
+                                                "prnt_menu_id": 14,
+                                                "menu_dscr": "[ Servicios]-Listado de Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Respuesta de obtener menus asignados"
+                    }
+                }
+            }
+        },
+        "/api/deleteRol": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "role_name": "role"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Delete de User"
+                    }
+                }
+            }
+        },
+        "/api/updateRol": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "role_name": "END-ADMINENDOSOS",
+                                        "description": "Super administrador de Endosos",
+                                        "accesos": [
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 9
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 10
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 11
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 12
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 13
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 14
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 15
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 16
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 21
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 25
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 26
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 27
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 28
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 29
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 30
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Respuesta update rol"
+                    }
+                }
+            }
+        },
+        "/api/insertRolAccess": {
+            "post": {
+                "requestBody": {
+                    "description": "Respuesta de registro de accesos",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "role_name": "END-ADMINENDOSOS",
+                                        "description": "Super administrador de Endosos",
+                                        "accesos": [
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 9
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 10
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 11
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 12
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 13
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 14
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 15
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 16
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 21
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 25
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 26
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 27
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 28
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 29
+                                            },
+                                            {
+                                                "role_name": "ADMINENDOSOS",
+                                                "menu_id": 30
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "respuesta"
+                    }
+                }
+            }
+        },
+        "/api/insertRol": {
+            "post": {
+                "requestBody": {
+                    "description": "Respuesta de insercion de rol",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "role_name": "END-nuevoRol",
+                                        "description": "descRolNew",
+                                        "admn_id": "0"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "respuesta de exito o error"
+                    }
+                }
+            }
+        },
+        "/api/getAllMenus": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "sistema": "MXENDOSOS"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": [
+                                            {
+                                                "menu_id": 8,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Principales",
+                                                "menu_univ_rsrc_lctr": "",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 9,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Gestion de Póliza",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 10,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Endosos",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 11,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 12,
+                                                "prnt_menu_id": 0,
+                                                "menu_dscr": "Usuarios y Gestión de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 13,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 14,
+                                                "prnt_menu_id": 10,
+                                                "menu_dscr": "[ Endosos]-Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 15,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de usuarios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 16,
+                                                "prnt_menu_id": 12,
+                                                "menu_dscr": "[ Usuarios y Gestión de Roles]-Administración de Roles",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 21,
+                                                "prnt_menu_id": 13,
+                                                "menu_dscr": "[ Solicitud de Endoso]-Solicitud de Endoso",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 25,
+                                                "prnt_menu_id": 15,
+                                                "menu_dscr": "[ Administración de usuarios]-Usuarios",
+                                                "menu_univ_rsrc_lctr": "#users",
+                                                "menu_ord_num": 2,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 26,
+                                                "prnt_menu_id": 16,
+                                                "menu_dscr": "[ Administración de Roles]-Roles",
+                                                "menu_univ_rsrc_lctr": "#roles",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 27,
+                                                "prnt_menu_id": 11,
+                                                "menu_dscr": "[ Seguimiento a Folios]-Folios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 28,
+                                                "prnt_menu_id": 27,
+                                                "menu_dscr": "[ Folios]-Seguimiento a Folios",
+                                                "menu_univ_rsrc_lctr": "#track",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 29,
+                                                "prnt_menu_id": 9,
+                                                "menu_dscr": "[ Gestion de Póliza]-Polizas",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            },
+                                            {
+                                                "menu_id": 30,
+                                                "prnt_menu_id": 14,
+                                                "menu_dscr": "[ Servicios]-Listado de Servicios",
+                                                "menu_univ_rsrc_lctr": "/",
+                                                "menu_ord_num": 1,
+                                                "sys_nm": "MXENDOSOSUI"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Obtiene todos los usuarios"
+                    }
+                }
+            }
+        },
+        "/api/deleteUser": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "user": "MXUSER"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Delete User"
+                    }
+                }
+            }
+        },
+        "/api/updateUser": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "usr_nm": "a",
+                                        "rtnr_nm": "",
+                                        "act_ind": "1",
+                                        "usr_id": 1,
+                                        "usr_first_name": "b",
+                                        "usr_ptrnl_lst_nm": "c",
+                                        "usr_mtrnl_lst_nm": "d",
+                                        "brkr_nm": "e",
+                                        "area_nm": "f",
+                                        "usr_job_cd": "1",
+                                        "usr_email_adr_txt": "a@hotmail.com",
+                                        "usr_tel_num": "1",
+                                        "usr_tel_ext_num": "1",
+                                        "usr_loc_txt": "2",
+                                        "usr_typ_cd": ""
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Respuesta de actualizacion"
+                    }
+                }
+            }
+        },
+        "/api/insertUser": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "usr_nm": "a",
+                                        "rtnr_nm": "",
+                                        "act_ind": "1",
+                                        "usr_id": 1,
+                                        "usr_first_name": "b",
+                                        "usr_ptrnl_lst_nm": "c",
+                                        "usr_mtrnl_lst_nm": "d",
+                                        "brkr_nm": "e",
+                                        "area_nm": "f",
+                                        "usr_job_cd": "1",
+                                        "usr_email_adr_txt": "a@hotmail.com",
+                                        "usr_tel_num": "1",
+                                        "usr_tel_ext_num": "1",
+                                        "usr_loc_txt": "2",
+                                        "usr_typ_cd": ""
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "error": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Respuesta de insert usuario"
+                    }
+                }
+            }
+        },
+        "/api/getAllRoles": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "sistema": "MXENDOSOS"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": [
+                                            {
+                                                "role_id": 21,
+                                                "role_nm": "LIONXD",
+                                                "admn_ind": "0",
+                                                "role_dscr": "PRUEBA 2"
+                                            },
+                                            {
+                                                "role_id": 23,
+                                                "role_nm": "ROLENDOSOS",
+                                                "admn_ind": "0",
+                                                "role_dscr": "desc de rol endodsos2"
+                                            },
+                                            {
+                                                "role_id": 24,
+                                                "role_nm": "ADMINENDOSOS",
+                                                "admn_ind": "0",
+                                                "role_dscr": "Super administrador de Endosos"
+                                            },
+                                            {
+                                                "role_id": 25,
+                                                "role_nm": "nuevoRol",
+                                                "admn_ind": "0",
+                                                "role_dscr": "descRolNew"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Obtiene todos los roles"
+                    }
+                }
+            }
+        },
+        "/api/getAllUsers": {
+            "post": {
+                "requestBody": {
+                    "description": "Respuesta  de obtener listado de usuarios",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "sistema": "MXENDOSOS"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": [
+                                            {
+                                                "data": "info"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "description": "response con lista de usuarios"
+                    }
+                }
+            }
+        },
+        "/api/getUserInfo": {
+            "post": {
+                "requestBody": {
+                    "description": "Obtiene datos de usuario",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "data": {
+                                    "value": {
+                                        "username": "USERMET"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "data": {
+                                        "value": {
+                                            "username": "user",
+                                            "data": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Respuesta de info user"
+                    }
+                }
+            }
+        },
+        "/getGCAyEStatus": {
+            "summary": "getGCAyEStatus",
+            "get": {
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "GCAyE open": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "GCAyE is open",
+                                            "systemMessage": "GCAyE is open"
+                                        }
+                                    },
+                                    "GCAyE closed": {
+                                        "value": {
+                                            "code": 1,
+                                            "message": "GCAyE is closed",
+                                            "systemMessage": "GCAyE still in closed period"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "Invalid request",
+                                            "systemMessage": "Invalid request"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "getGCAyEStatus",
+                "description": "Service used to validate if GCAyE is in the closing period"
+            }
+        },
+        "/performEndorsement": {
+            "summary": "performEndorsement",
+            "description": "performEndorsement",
+            "post": {
+                "requestBody": {
+                    "description": "DCN to which the endorsements will be processed",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/dcnType"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "The endorsement process has started",
+                                            "systemMessage": "The endorsement process has started"
+                                        }
+                                    },
+                                    "Error": {
+                                        "value": {
+                                            "code": 1,
+                                            "message": "an error occurred when executing the endorsement process",
+                                            "systemMessage": "an error occurred when executing the endorsement process"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "Invalid request",
+                                            "systemMessage": "Invalid request"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "performEndorsement",
+                "description": "Service used to request the Endorsement process to GCAyE"
+            }
+        },
+        "/preValidateFile": {
+            "summary": "preValidateFile",
+            "description": "preValidateFile",
+            "post": {
+                "requestBody": {
+                    "description": "DCN to which the associated business rules will apply (Pre-validation)",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/preValidateFileType"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "Successfully received request",
+                                            "systemMessage": "Success"
+                                        }
+                                    },
+                                    "Layout Not Found": {
+                                        "value": {
+                                            "code": 1,
+                                            "message": "Requested layout was not found",
+                                            "systemMessage": "Requested layout was not found"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "Error procesing transformation",
+                                            "systemMessage": "Invalid request"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "preValidateFile",
+                "description": "Service used to request the pre-validation of business rules associated with the requested procedure, through the DCN"
+            }
+        },
+        "/validateAgent/{AgentId}": {
+            "summary": "validateAgent",
+            "description": "validateAgent",
+            "get": {
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "Agent is active",
+                                            "systemMessage": "Agent is active"
+                                        }
+                                    },
+                                    "Error": {
+                                        "value": {
+                                            "code": 1,
+                                            "message": "Agent is not active",
+                                            "systemMessage": "Agent is not active"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "An error occurred while validating the agent",
+                                            "systemMessage": "An error occurred while validating the agent"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "validateAgent",
+                "description": "Service used to request validation rules fr Agent"
+            },
+            "parameters": [
+                {
+                    "name": "AgentId",
+                    "description": "Id of the agent to validate",
+                    "schema": {
+                        "type": "integer"
+                    },
+                    "in": "path",
+                    "required": true
+                }
+            ]
+        },
+        "/applyBusinessRules": {
+            "summary": "applyBusinessRules",
+            "description": "applyBusinessRules",
+            "post": {
+                "requestBody": {
+                    "description": "DCN to which the associated business rules will apply",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/dcnType"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "Successfully received request",
+                                            "systemMessage": "Successfully received request"
+                                        }
+                                    },
+                                    "Error": {
+                                        "value": {
+                                            "code": 1,
+                                            "message": "An error occurred when applying business rules",
+                                            "systemMessage": "An error occurred when applying business rules"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "An error occurred when requesting the application of business rules",
+                                            "systemMessage": "Invalid request"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "applyBusinessRules",
+                "description": "Service used to request the application of business rules associated with the requested procedure, through the DCN"
+            }
+        },
+        "/createTOMProcess": {
+            "summary": "createTOMProcess",
+            "description": "createTOMProcess",
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/createTOMProcessType"
+                            },
+                            "examples": {
+                                "Request": {
+                                    "value": {
+                                        "promotoria": "PPP",
+                                        "canal": "M | W",
+                                        "lineaNegocio": "R | P | C | V",
+                                        "TBD_FromBPM": {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/createTOMProcessResponse"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": {
+                                            "code": 0,
+                                            "message": "Success",
+                                            "systemMessage": "Success",
+                                            "dcn": "20181412001M01703111"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "createTOMProcess",
+                "description": "createTOMProcess"
+            }
+        },
+        "/getTemplate/{userId}": {
+            "summary": "getTemplate",
+            "get": {
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/pdf": {
+                                "schema": {
+                                    "format": "binary",
+                                    "type": "string"
+                                },
+                                "examples": {
+                                    "SuccessResponse": {
+                                        "value": "\"<FILE>\""
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Successful Operation"
+                    },
+                    "400": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/headerResponse"
+                                },
+                                "examples": {
+                                    "Error": {
+                                        "value": {
+                                            "code": 400,
+                                            "message": "Failed to get the FTU",
+                                            "systemMessage": "url resource for FTU is not configured"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Bad Request"
+                    }
+                },
+                "summary": "getTemplate",
+                "description": "Service used to get the FUT that allows massive loading based on the layout"
+            },
+            "parameters": [
+                {
+                    "name": "userId",
+                    "description": "user who is requesting the layout",
+                    "schema": {
+                        "type": "string"
+                    },
+                    "in": "path",
+                    "required": true
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "headerResponse": {
+                "description": "",
+                "required": [
+                    "code",
+                    "message"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Error code result, 0 Success, != 0 Error",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "friendly user message",
+                        "type": "string"
+                    },
+                    "systemMessage": {
+                        "description": "Stacktrace when apply (usefull for IT)",
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": 0,
+                    "message": "Successful",
+                    "systemMessage": "Successful"
+                }
+            },
+            "dcnType": {
+                "description": "DCN Type",
+                "required": [
+                    "dcn"
+                ],
+                "type": "object",
+                "properties": {
+                    "dcn": {
+                        "description": "DCN identifier for the OT",
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "dcn": "20181412001M01703111"
+                }
+            },
+            "preValidateFileType": {
+                "description": "",
+                "required": [
+                    "dcn",
+                    "layoutId"
+                ],
+                "type": "object",
+                "properties": {
+                    "dcn": {
+                        "description": "DCN identifier for the OT",
+                        "type": "string"
+                    },
+                    "layoutId": {
+                        "description": "Id of the layout that will be used to perform the validation and transformation of the layout",
+                        "type": "integer"
+                    }
+                },
+                "example": {
+                    "dcn": "20181412001M01703111",
+                    "layoutId": 1
+                }
+            },
+            "createTOMProcessType": {
+                "description": "",
+                "required": [
+                    "canal",
+                    "lineaNegocio",
+                    "promotoria",
+                    "TBD_FromBPM"
+                ],
+                "type": "object",
+                "properties": {
+                    "promotoria": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "canal": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "lineaNegocio": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "TBD_FromBPM": {
+                        "description": "Parameters to be define by BPM (for endorsement an emission)"
+                    }
+                },
+                "example": {
+                    "promotoria": "PPP",
+                    "canal": "M | W",
+                    "lineaNegocio": "R | P | C | V",
+                    "TBD_FromBPM": {
+
+                    }
+                }
+            },
+            "createTOMProcessResponse": {
+                "description": "",
+                "required": [
+                    "code",
+                    "message",
+                    "folioDcn"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "Error code result, 0 Success, != 0 Error",
+                        "type": "integer"
+                    },
+                    "message": {
+                        "description": "friendly user message",
+                        "type": "string"
+                    },
+                    "systemMessage": {
+                        "description": "Stacktrace when apply (usefull for IT)",
+                        "type": "string"
+                    },
+                    "folioDcn": {
+                        "description": "generated dcn",
+                        "type": "string"
+                    }
+                },
+                "example": {
+                    "code": 0,
+                    "folioDcn": "20181412001M01703111",
+                    "message": "successfull",
+                    "systemMessage": "successfull"
+                }
+            }
+        }
+    }
+}
